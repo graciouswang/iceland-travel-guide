@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇮🇸 Contact | Iceland Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fira+Sans:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body id="contact-body">
+    <header>
+        <nav>
+            <p id="header-title">🇮🇸 Iceland Travel Guide</p>
+            <ul id="header-links">
+                <li class="nav-link"><a href="index.html">home</a></li>
+                <li class="nav-link"><a href="about.html">about</a></li>
+                <li class="nav-link"><a href="gallery.html">gallery</a></li>
+                <li class="nav-link"><a href="contact.html">contact</a></li>
+                <div id="hamburger-menu">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="responsive-menu">
+        <ul>
+            <li class="menu-item"><a href="index.html">home</a></li>
+            <li class="menu-item"><a href="about.html">about</a></li>
+            <li class="menu-item"><a href="gallery.html">gallery</a></li>
+            <li class="menu-item"><a href="contact.html">contact</a></li>
+            <li class="menu-item" id="close-menu">X</li>
+        </ul>
+    </aside>
+
+    <section id="contact-introduction">
+        <h1>Contact Us</h1>
+        <p>Ready to explore the land of ice and fire? Contact us now!</p>
+    </section>
+
+    <section id="contact-form">
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <div id="name-error-message"></div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="name" required>
+            <div id="email-error-message"></div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+
+        <div id="thankyou-message"></div>
+
+    </section>
+
+    <footer>
+        <p>Designed & created by <em class="author">Grace Wang</em></p>
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

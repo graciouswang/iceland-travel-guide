@@ -1,0 +1,629 @@
+:root {
+    --icelandicblue: rgba(2, 82, 156, 1);
+    --icelandicwhite: rgba(255, 255, 255, 1);
+    --icelandicred: rgba(220, 30, 53, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+}
+
+#about-body {
+    /*background-color:rgba(2, 82, 156, 0.7);*/
+    background: linear-gradient(90deg,
+    rgba(2, 82, 156, 0.5),
+    rgba(255, 255, 255, 0.5),
+    rgba(220, 30, 53, 0.5));
+}
+
+#contact-body {
+    background-image: url("img/24.jpg");
+    background-size: cover;
+}
+
+a {
+    color: var(--icelandicred);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--icelandicwhite);
+}
+
+h1, h2 {
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--icelandicred);
+}
+
+header, footer {
+    background-color: var(--icelandicblue);
+    color: white;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+    border-bottom: 5px solid var(--icelandicwhite);
+    box-shadow: 0 5px var(--icelandicred);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-title {
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 0.2em;
+    margin-left: 20px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#header-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+#header-links li {
+    list-style-type: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:hover {
+    cursor: pointer;
+    background-color: var(--icelandicwhite);
+}
+
+.hamburger-line {
+    width: 35px;
+    border-top: 4px solid var(--icelandicred);
+    margin: 5px 20px;
+}
+
+#responsive-menu {
+    position: fixed;
+    z-index: 1; 
+    top: 60px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 50px;
+    background-color: var(--icelandicwhite);
+    display: none;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin: 20px;
+}
+
+.menu-item a:hover {
+    color: var(--icelandicblue);
+}
+
+#close-menu {
+    text-align: center;
+    color: var(--icelandicred);
+}
+
+#close-menu:hover {
+    color: var(--icelandicblue);
+    cursor: pointer;
+}
+
+#hero {
+    background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)),
+        url("img/13.jpg");
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#hero h1 {
+    font-size: 42px;
+    margin-top: 60px;
+}
+
+#hero p {
+    color: var(--icelandicwhite);
+    font-size: 24px;
+    width: 60%;
+    margin: 30px auto;
+    font-style: oblique;
+    line-height: 1.2em;
+}
+
+#top-attractions {
+    width: 85vw;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color:rgba(2, 82, 156, 0.7);
+    box-shadow: 5px 5px var(--icelandicblue);
+    padding: 15px;
+}
+
+#top-attractions h2 {
+    font-size: 28px;
+    margin: 15px;
+    color: var(--icelandicwhite);
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+}
+
+#flex-attractions {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.attraction {
+    width: 30%;
+    background-color: var(--icelandicwhite);
+    border: 2px solid var(--icelandicred);
+    border-radius: 20px;
+    box-shadow: 5px 5px var(--icelandicred);
+}
+
+.attraction h3 {
+    margin: 15px;
+    font-style: oblique;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.attraction img {
+    object-fit: cover;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.attraction p {
+    margin: 10px;
+}
+
+
+
+#about-container {
+    width: 60vw;
+    margin: 20px auto;
+    margin-top: 90px; 
+    text-align: center;
+    border: 5px solid var(--icelandicblue);
+    border-radius: 20px;
+    background-color: var(--icelandicwhite);
+    box-shadow: 5px 5px var(--icelandicred);
+}
+
+#about-introduction {
+    padding: 30px;
+    padding-bottom: 50px;
+    border-radius: 15px 15px 0px 0px;
+    background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.1)),
+        url("img/25.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+    width: auto;
+}
+
+#about-introduction h1 {
+    font-size: 42px;
+    margin: 15px;
+}
+
+#about-introduction p {
+    margin: 15px;
+    color: var(--icelandicwhite);
+}
+
+#iceland-map {
+    margin: 10px auto;
+}
+
+#iceland-map img {
+    width: 500px;
+}
+
+#basic-facts {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, 
+    var(--icelandicwhite), 
+    var(--icelandicblue));
+    width: 65%;
+}
+
+#basic-facts h2, #fun-facts h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px;
+}
+
+#basic-facts p {
+    margin: 10px auto;
+    width: 40%;
+}
+
+#national-treasures {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#national-treasures img {
+    width: 300px;
+    margin: 20px;
+    border: 5px solid var(--icelandicblue);
+    border-radius: 20px;
+}
+
+#national-treasures img:hover {
+    opacity: 70%;
+}
+
+#fun-facts {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    background: linear-gradient(120deg, 
+    var(--icelandicblue), 
+    var(--icelandicwhite) 70%);
+    width: 65%;
+}
+
+.fun-facts {
+    margin: 20px;
+}
+
+.fun-facts li {
+    list-style-type: none;
+    margin: 10px auto;
+    padding-left: 70px;
+}
+
+.fun-facts li::before {
+    content: "🇮🇸    ";
+}
+
+#gallery-introduction {
+    width: 60vw;
+    margin: 20px auto;
+    margin-top: 70px;
+    border: 3px solid var(--icelandicred);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(
+    135deg,
+    rgba(2, 82, 156, 0.5), 
+    rgba(220, 30, 53, 0.5)
+    );
+    box-shadow: 5px 5px var(--icelandicred);
+}
+
+#gallery-introduction h1 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+#gallery-introduction p {
+    margin: 20px;
+}
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid var(--icelandicred);
+    box-shadow: 5px 5px var(--icelandicred);
+    border-radius: 20px;
+    width: 60vw;
+    margin: 20px auto;
+    padding: 15px;
+    background: linear-gradient(
+    100deg,
+    rgba(2, 82, 156, 0.5), 
+    rgba(255, 255, 255, 0.5),
+    rgba(220, 30, 53, 0.5)
+    );
+}
+
+.grid-items {
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+    margin: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px var(--icelandicblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-items:hover {
+    cursor: pointer;
+}
+
+#image-1 {
+    background-image: url(img/1.jpg);
+}
+
+#image-2 {
+    background-image: url(img/4.jpg);
+}
+
+#image-3 {
+    background-image: url(img/5.jpg);
+}
+
+#image-4 {
+    background-image: url(img/6.jpg);
+}
+
+#image-5 {
+    background-image: url(img/7.jpg);
+}
+
+#image-6 {
+    background-image: url(img/8.jpg);
+}
+
+#image-7 {
+    background-image: url(img/9.jpg);
+}
+
+#image-8 {
+    background-image: url(img/12.jpg);
+}
+
+#image-9 {
+    background-image: url(img/14.jpg);
+}
+
+#image-10 {
+    background-image: url(img/15.jpg);
+}
+
+#image-11 {
+    background-image: url(img/16.jpg);
+}
+
+#image-12 {
+    background-image: url(img/17.jpg);
+}
+
+#image-13 {
+    background-image: url(img/18.jpg);
+}
+
+#image-14 {
+    background-image: url(img/19.jpg);
+}
+
+#image-15 {
+    background-image: url(img/20.jpg);
+}
+
+#image-16 {
+    background-image: url(img/21.jpg);
+}
+
+#image-17 {
+    background-image: url(img/22.jpg);
+}
+
+#image-18 {
+    background-image: url(img/23.jpg);
+}
+
+#contact-introduction {
+    width: 60vw;
+    margin: 20px auto;
+    margin-top: 70px;
+    text-align: center;
+    border: 5px solid var(--icelandicblue);
+    border-radius: 20px;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+#contact-introduction h1 {
+    font-size: 42px;
+    margin: 15px;
+}
+
+#contact-form {
+    width: 60vw;
+    margin: 20px auto; 
+    border: 5px solid var(--icelandicblue);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+input, textarea, form {
+    display: block;
+    margin: 15px auto;
+}
+
+input, textarea {
+    width: 40vw;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input {
+    height: 30px;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+textarea:focus, input:focus {
+    background-color:rgba(220, 30, 53, 0.5);
+}
+
+textarea {
+    padding: 20px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    height: auto;
+    background-color: var(--icelandicred);
+    border-radius: 10px;
+    border: var(--icelandicblue);
+    box-shadow: 5px 5px var(--icelandicblue);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    margin: 30px auto;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(150deg, 
+    var(--icelandicred),
+    var(--icelandicblue));
+    transform: scale(1.05);
+    color: var(--icelandicwhite);
+}
+
+footer {
+    text-align: right;
+}
+
+.author {
+    color: var(--icelandicred);
+}
+
+#name-error-message, #email-error-message {
+    color: var(--icelandicred);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        display: none;
+    }
+    #hamburger-menu {
+        display: block;
+    }
+    #hero h1 {
+        margin-top: 80px;
+    }
+    #hero p {
+        margin-top: 250px;
+    }
+    #top-attractions {
+        width: 90vw;
+    }
+    #flex-attractions {
+        padding: 0;
+        justify-content: space-between;
+    }
+    .attraction {
+        width: 32%;
+        box-shadow: 3px 3px var(--icelandicred);
+    }
+    #about-container {
+        width: 75vw;
+    }
+    #national-treasures {
+        display: block;
+    }
+    #gallery-introduction, #gallery-grid {
+        width: 85vw;
+    }
+    #contact-introduction, #contact-form {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #header-title {
+        letter-spacing: 0.1em;
+    }
+    #hero {
+        background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)),
+        url("img/13.jpg");
+        justify-content: center;
+        align-items: center;
+    }
+    #hero h1, #hero p {
+        margin: 10px;
+    }
+    #hero p {
+        width: 80%;
+    }
+    #top-attractions {
+        width: 80vw;
+    }
+    #flex-attractions {
+        display: block;
+    }
+    .attraction {
+        width: 90%;
+        margin: 15px auto;
+    }
+    #about-container {
+        width: 90vw;
+        margin: auto;
+        margin-top: 70px;
+    }
+    #iceland-map img {
+        width: 80vw;
+    }
+    #basic-facts, #fun-facts {
+        width: 80%;
+    }
+    .fun-facts li {
+        padding-left: 20px;
+    }
+    #gallery-grid {
+        display: block;
+    }
+    input, textarea {
+        width: 70vw;
+    }
+}
